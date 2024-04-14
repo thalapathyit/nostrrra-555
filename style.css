@@ -1,0 +1,175 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.body{
+  width: 100%;
+}
+.container{
+  display:flex;
+  padding:10px;
+  margin:5px;
+}
+ .container-1>div>input{
+   margin:10px;
+   padding: 10px;
+ }
+.navbar{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.navbar2{
+ display: flex;
+  flex-direction:row;
+  gap: 10px;
+}
+.navbar2>p{
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: palevioletred;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+.navbar2>p:hover{
+  background-color: white;
+  transition-duration:1s;
+}
+.navbar3{
+  width:30px;
+  display:none;
+}
+
+.vertical{
+  transform: rotate(180deg);
+  height: 800px;
+  width:5px;
+  background-color: black;
+} 
+.vertical-1{
+ margin :15px;
+}
+.coursecontainer{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.product{
+  flex-basis:25%;
+  margin: 5px;
+}
+.product>img{
+  width:95%;
+}
+.search{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 5px;
+}
+.search>input{
+  border: 2px solid black;
+  width:95%;
+  padding: 10px;
+}
+.wholecontainer{
+  position: relative;
+}
+.letter{
+  text-align: center;
+  padding:20px;
+}
+.letter>button{
+  padding: 5px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+}
+.letter>input{
+  padding: 5px;
+  margin: 3px;
+  width: 20%;
+  border: 3px solid black;
+}
+.footer{
+  background-color:darkcyan;
+  color: white;
+  padding: 20px;
+  margin: 15px;
+}
+.footer-1{
+  margin: 10px;
+  padding:30px;
+}
+#sidenavbar{
+  width: 50%;
+  height:100dvh;
+  position: fixed;
+  z-index: 25;
+  top:0.0;
+  left: -50%;
+  transition-duration:2s;
+}
+.sidenavbar1>p{
+  padding: 20px;
+}
+#close{
+  cursor: pointer;
+  color: black;
+  margin:10px;
+  padding: 20px;
+  text-align: right;
+  font-size: x-large;
+  font-weight: bolder;
+}
+ @media screen and (max-width:600px) {
+  body{
+    font-size:12px;
+  }
+  .vertical{
+    height:350px;
+  }
+}
+@media screen and (max-width:750px) {
+  .navbar3{
+    display: block;
+  }
+  .navbar2{
+    display:none;
+  }
+}
+@media screen and (max-width:600px) {
+  .product{
+     flex-basis:25%;
+    font-size: small;
+  }
+  .product>p{
+    font-size: 10px;
+  }
+  .product>img{
+  width:15vw;
+}
+h2{
+  font-size:8px;
+  font-weight: bolder;
+}
+
+  .letter>input{
+  padding: 5px;
+  margin: 3px;
+  width:50%;
+}
+}
+@media screen and (min-width:500px){
+  #sidenavbar{
+    display: none;
+  }
+}
+  
+
+
